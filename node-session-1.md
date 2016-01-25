@@ -8,7 +8,7 @@
 
 ## Installing Software
 
-Over the next weeks we will dive into learning how to code a JavaScript project using Node.JS. For that we need to install some software to get started. Contrary to the JavaScript that we wrote before this will not execute in your browser but directly in your computer. For now we will install three different things. We will need a code editor in which we will be doing the programming, an interpreter in this case called **Node.JS** that will understand the code and exectute our program and then we will install a program called **Git**. 
+Over the next weeks we will dive into learning how to code a JavaScript project using Node.JS. For that we need to install some software to get started. Contrary to the JavaScript that we wrote before, these programs will not execute in your browser but directly on your computer. For now we will install three different things. We will need a code editor in which we will be doing the programming, an interpreter in this case called **Node.JS** that will understand the code and exectute our program and then we will install a program called **Git**. 
 
 #### 1. Visual Studio Code as your new code editor
 
@@ -16,7 +16,7 @@ You could write your code in any plain text editor such as Notepad but programme
 
 https://code.visualstudio.com/
 
-And go click on *Download Code*. Once you downloaded the file, execute it and install the editor. If it asks you whether you want to add an entry to the context menu say yes. Once done you should be able to see on your Desktop this logo:
+And clicking on the *Download Code* button. Once you downloaded the file, execute it and install the editor. If it asks you whether you want to add an entry to the context menu say yes. Once done you should be able to see on your Desktop this logo:
 
 ![VS Code logo](images/vscode.png)
 
@@ -30,7 +30,7 @@ and download the *Stable* version. Just execute the downloaded installer and go 
 
 #### 3. Git
 
-This is the last thing we need. Git is what we call a **version control system**. It allows you to track changes in your document and revert unwanted changes. We will learn more about it later. But for now we will install it because some things have dependencies on it and want to use the command prompt that comes with it. To install it head to:
+This is the last thing we need for now. Git is what we call a **version control system**. It allows you to track changes in your document and revert unwanted changes. We will learn more about it later. But for now we will install it because some things have dependencies on it and we want to use the command prompt that is being installed with it. To install it head to:
 
 https://git-scm.com/downloads
 
@@ -40,15 +40,15 @@ Download there the respective version depending on your Operating System and wal
 
 In this tutorial we will mainly focus on Windows as an Operating System but all things will be able to run on Mac OS or any Linux just as well.
 
-Programmers use the command prompt for a lot of tasks in their daily life. It allows you to get a lot of tasks done very efficiently. Every operating system has some sort of command prompt or also called 'shell'. There are a variety of them. Windows comes with two built-in command prompts. Additionally we got another one called **Git Bash** when we installed Git. For the next sessions we will use this prompt to run all the commands. Once you open the application you will see a black window.
+Programmers use the command prompt for a lot of tasks in their daily life. It allows you to get a lot of tasks done very efficiently. Every operating system has some sort of command prompt or also called 'shell'. There are a variety of them. Windows comes with two built-in command prompts. Additionally we got another one called **Git Bash** when we installed Git. For the next sessions we will use this prompt to run all the commands. Once you open the application you will see a black window like the one in the pictue below.
 
 ![](images/commandprompt.png)
 
 In here we can execute now a variety of commands but first let's understand what this is actually showing. We can see four different sections if we differentiate by color. 
 
-The green colored part is your username and machine name. We will ignore the purple part for now as it isn't interesting for what we will do. The yellow text that is in the beginning only a `~` shows the current directory/folder we are operating in. The `~` is a shorthand notation for your home directory which will be typically in `C:/Users/<username>`. 
+The green colored part is your username and machine name. We will ignore the purple part for now, it isn't interesting for what we will do. The yellow text that is in the beginning only a `~` shows the current directory/folder we are operating in. The `~` is a shorthand notation for your home directory which will be typically in Windows something like  `C:/Users/myname`. 
 
-The last thing is the second line that starts with a `$`. This is the part where you can write your commands. There are a variety of commands built-in. We will use a couple of them to do some basic things.
+The last thing is the line that starts with a `$`. This is the part where you can write your commands. There are a variety of commands built-in. We will use a couple of them to do some basic things.
 
 The first thing we want to do is creating a folder called `dojo`. For that we will use the `mkdir` command. `mkdir` stands for *Make directory* and creates the folder that you will write as the second word. Therefore your first line should look like this:
 
@@ -62,7 +62,7 @@ Once you press `Enter` the folder will be created. The next thing we need to do 
 $ cd dojo
 ```
 
-You will see that the yellow part has now been updated to `~/dojo`. This indicates that we successfully navigated to that directory now. If we want to see the folder we can use the `start` command of Windows to open the folder in the Explorer. Since we are already in the directory we want to open we can use `.` to denote that we want to open the current directory.
+You will see that the yellow part has now been updated to `~/dojo`. This indicates that we successfully navigated to that directory. If we want to see the folder we can use the `start` command of Windows to open the folder in the Explorer. Since we are already in the directory we want to open we can use `.` to denote that we want to open the current directory.
 
 ``` 
 $ start .
@@ -84,7 +84,7 @@ In order to leave this mode again you need to press `Ctrl`+`C` twice or type `.e
 
 ## The Code Editor
 
-In theory you could write all the programs we will be writing in the next sessions using a basic plain text editor such as Notepad. However programmers prefer using either special code editors or a so called IDE. IDEs are more heavy programs that allow you to do a lot of additional tasks that come with programming that are not directly writing the code. Code Editors on the other hand try to be lightweight and focus on helping you write the code. Both types of editors usally provide you with a certain set of standard features.
+In theory you could write all the programs we will be writing in the next sessions using a basic plain text editor such as Notepad. However programmers prefer using either special code editors or a so called IDE. IDEs are more heavy programs that allow you to do a lot of additional tasks that come with programming that are not directly writing the code. Code editors on the other hand try to be lightweight and focus on helping you write the code. Both types of editors usally provide you with a certain set of standard features.
 
 One important feature is syntax highlighting. The editor will color different parts of the code in other colors to let you read the code more easily and understand the structure better. It also helps you to spot mistakes more easily.
 
@@ -107,7 +107,7 @@ That's it! We have now our first file and are ready to finally write our first l
 
 ## Hello World!
 
-When a programmer learns a new programming language the classical first program he or she writes is called 'Hello World!'. The whole purpose of the program is to print `Hello World!` to the screen. In our case the new language is JavaScript and we want to print `Hello World!` to the command prompt or also called `console`.
+When a programmer learns a new programming language the classical first program he or she writes is called 'Hello World!'. The whole purpose of the program is to print `Hello World!` to the screen. In our case the new language is JavaScript and we want to print `Hello World!` to the command prompt, also called `console`.
 
 In programming two terms you usually interact with are **Objects** and **Functions**. Just like in real life you can interact with objects. Objects can have properties and actions to interact with them. These actions are known as methods. Methods are a kind of function.
 
@@ -135,7 +135,7 @@ In order to run this you need to go back into your command prompt window and typ
 
 ## Variables and Loops
 
-**Variables** and **loops** are two of the most important concepts in programming. Both concepts allow you to write less code and achieve more. Loops allow you to execute a snippet of code as long as a certain condition is met. Variables on the other hand allow you to store a value under a nickname and reuse it across your code. Imagine a variable like a box with a label. You can decide the name on the label and you can look into the box to see what's in there or replace the item with a new one.
+**Variables** and **Loops** are two of the most important concepts in programming. Both concepts allow you to write less code and achieve more. Loops allow you to execute a snippet of code as long as a certain condition is met. Variables on the other hand allow you to store a value under a nickname and reuse it across your code. Imagine a variable like a box with a label. You can decide the name on the label and you can look into the box to see what's in there or replace the item with a new one.
 
 Let's start with learning how to create and use a variable. You declare a new variable by writing `var` followed by the name for your new variable. If you want to assign a value to a variable you specify the name, write an `=` and then specify the value you want to set it to. If you want to use the variable somewhere just write the name of it.
 
@@ -160,7 +160,7 @@ As you can see there are four gaps that we need to fill out with some code. In o
 3. This is where you want to put your actual code. Everything that is between the `{}` will be executed once per iteration.
 4. After every round this step is executed. This is part we can use for incrementing the counter that we created in `(1)` and are checking in `(2)`.
 
-Now that we learned what variables and loops are we can make use of these to print a message multiple times to the screen. Let's say we want to print `Hello Dojo!` in total five times to the screen. We can use a `for` loop for this where we create in `(1)` a counter variable set to `0`. In `(2)` we will check if it is smaller than `5`. In `(3)` we will use `console.log` and in `(4)` we will increment the counter by one. The code in your `app.js` should look like this:
+Now that we learned what variables and loops are, we can make use of these to print a message multiple times to the screen. Let's say we want to print `Hello Dojo!` in total five times to the screen. We can use a `for` loop for this where we create in `(1)` a counter variable set to `0`. In `(2)` we will check if it is smaller than `5`. In `(3)` we will use `console.log` and in `(4)` we will increment the counter by one. The code in your `app.js` should look like this:
 
 ``` javascript
 console.log('Hello World!');
@@ -186,7 +186,7 @@ An array always starts with `[` and ends with `]`. In between that you can have 
 var participants = ['Dominik', 'Philip'];
 ```
 
-Now that we have this list of participants we can modify our existing loop code to actually greet everyone in the dojo inidividually. The first thing we need do is to update the `Hello Dojo!` to print the name of the respective participant. For this we need to access the different elements in the list. You access an element in an array by writing the name of the array followed by `[index]` where index is the position of the element you want to get. In programming we start counting at `0` therefore the first element has position `0`. So if we want to get `Dominik` we need to write: `participants[0]`. The other thing we need to do is to change the quotes (`'`) to **`**. This changes the text to a **template string** which allows us to write JavaScript inside it. The JavaScript inside needs to be wrapped in `${…}` in order to be noticed as JavaScript. Knowing all of that we can edit our code:
+Now that we have this list of participants we can modify our existing loop code to actually greet everyone in the dojo inidividually. The first thing we need do is to update the `Hello Dojo!` to print the name of the respective participant. For this we need to access the different elements in the list. You access an element in an array by writing the name of the array followed by `[index]` where index is the position of the element you want to get. In programming we start counting at `0` therefore the first element has position `0`. So if we want to get `Dominik` we need to write: `participants[0]`. The other thing we need to do is to change the quotes `'` to **`**. This changes the text to a **template string** which allows us to write JavaScript inside the string. The JavaScript inside needs to be wrapped in `${…}` in order to be noticed as JavaScript. Knowing all of that we can edit our code:
 
 ``` javascript
 console.log('Hello World!');
@@ -229,7 +229,9 @@ for(var index = 0; index < participants.length; index++) {
 
 ## Maths
 
-One of the main things you use programming for is doing mathematical calculations. JavaScript has a built in object for this called `Math` that we can use to do all kind of cool things. We can use it to compute 4 to the power of 50 is by simply writing `Math.pow(4, 50)` or do other operations on numbers such as finding the absolute value of a number. Let's use this library to actually add to our small program a part where every participant also gets a random number that has been rolled via a programmed dice. For this we need to generate random numbers between 1 and 6. For this we need to do a bit of math ourselves first. 
+One of the things programming is useful for is doing mathematical calculations. JavaScript has a built in object for this called `Math` that we can use to do all kind of cool things. We can use it to compute 4 to the power of 50 is by simply writing `Math.pow(4, 50)` or do other operations on numbers such as finding the absolute value of a number.
+
+Let's use this library to actually add to our small program a part where every participant gets a random number that has been rolled via a programmed dice. For this we need to generate random numbers between 1 and 6. In order to do this, we first need to do a bit of math ourselves. 
 
 First let's get a random number. JavaScript has a built-in generator for random numbers. We can use it by writing `Math.random()`. This will give us a number between 0 and 1 with a bunch of decimals. We now need to get this number to be actually between 1 and 6. For that we need to first multiply the number we get fom `Math.random()` by 6. This will give us random numbers between 0 and 6. Now we need to actually get the floor of this number which will result us getting a number that is one of the following 0, 1, 2, 3, 4 or 5. Which is close to what we need. The last thing we then need to do is to add 1 to it and output it in our program. As a result our `app.js` should look like this:
 
@@ -254,8 +256,6 @@ for(var index = 0; index < participants.length; index++) {
 ## Conclusion
 
 This was a bunch of things to take in for the first session. If you have any questions you can always ping me via Twitter. Just tweet to [@dkundel](http://twitter.com/dkundel).
-
-
 
 
 
